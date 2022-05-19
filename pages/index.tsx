@@ -21,7 +21,12 @@ const Home: NextPage = () => {
                 <span>Total</span>
                 <span>$970</span>
             </div>
-            <div className="bg-blue-500 text-center rounded-xl p-2 w-3/5 mx-auto text-white cursor-pointer"><span>Checkout</span></div>
+            <button
+                className="flex justify-center bg-blue-500 text-center rounded-xl p-2 w-3/5 mx-auto text-white
+                        hover:bg-blue-600 active:bg-blue-800"
+            >
+                Checkout
+            </button>
         </div>
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
             <div className="bg-blue-500 px-5 py-8 text-white text-xl pb-20 font-semibold">
@@ -40,7 +45,7 @@ const Home: NextPage = () => {
                     </div>
                 </div>
                 <div className="relative -mt-10 flex flex-col items-center">
-                    <span className="text-xl">Tony Molloy</span>
+                    <span className="text-xl font-semibold">Tony Molloy</span>
                     <span className="text-xs text-gray-400">New York, USA</span>
                 </div>
             </div>
@@ -68,10 +73,10 @@ const Home: NextPage = () => {
                     <span className="text-xs text-gray-400 -mt-1">Chair</span>
                 </div>
                 <div className="flex justify-between items-center">
-                    <div className="space-x-5">
-                        <input type="radio" />
-                        <input type="radio" />
-                        <input type="radio" />
+                    <div className="space-x-5 flex">
+                        <button className="w-4 h-4 bg-teal-500 rounded-full focus:ring-2 ring-offset-2 ring-teal-500 transition hover:ring-2" />
+                        <button className="w-4 h-4 bg-yellow-500 rounded-full focus:ring-2 ring-offset-2 ring-yellow-500 transition hover:ring-2" />
+                        <button className="w-4 h-4 bg-amber-900 rounded-full focus:ring-2 ring-offset-2 ring-amber-900 transition hover:ring-2" />
                     </div>
                     <div className="space-x-4">
                         <button className="bg-blue-200 aspect-square w-10 rounded-xl">-</button>
